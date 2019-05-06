@@ -1,6 +1,14 @@
 <template>
   <div class="nav navbar">
-    aaa
+    <div class="navmain">
+      <div class="logo" @click="backhome">logo</div>
+      <div class="findmusic">听！</div>
+      <div class="bbs">说！</div>
+    </div>
+    <div class="navright">
+      <div class="login">登录</div>
+      <div class="logon">注册</div>
+    </div>
   </div>
 
 </template>
@@ -12,7 +20,9 @@ export default {
     return {}
     },
     methods: {
-
+      backhome(){
+        this.router.push("/");
+      }
 
     }
 
@@ -23,7 +33,11 @@ export default {
 <style scoped>
   .nav{
     width: 100%;
-    height: 100px;
-    background: #000;
+    height: 5%;
+    background: #eee;
+    display: flex;
+  }
+  .nav .navmain,.nav .navright{
+    display: flex;
   }
 </style>

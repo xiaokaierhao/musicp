@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-
-    <navbar></navbar>
-    <router-view/>
+  	<div class="">ASDF</div>
   </div>
 </template>
 
 <script>
-import navbar from './components/navbar.vue'
+
 export default {
-  name: 'App',
-  components: { navbar }
 }
 </script>
-
 <style scoped>
 #app {
 
