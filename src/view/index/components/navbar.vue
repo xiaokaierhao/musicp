@@ -2,8 +2,8 @@
   <div class="nav navbar">
     <div class="navmain">
       <div class="logo" @click="backhome">logo</div>
-      <div class="findmusic">听！</div>
-      <div class="bbs">说！</div>
+      <router-link to="/music">听</router-link>
+      <router-link to="/bbs">shuo</router-link>
     </div>
     <div class="navright">
       <div class="login">登录</div>
